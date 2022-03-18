@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/suw_preview_seek_bar_view_pager"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="?android:attr/listPreferredItemPaddingStart" android:paddingEnd="?android:attr/listPreferredItemPaddingEnd">
+            <com.android.settings.widget.DotsPageIndicator android:layout_gravity="center_horizontal" android:id="@+id/page_indicator" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/PreviewPagerPageIndicator"/>
+            <TextView android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.TextView" android:layout_gravity="center_horizontal" android:id="@+id/current_label" android:padding="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:elevation="2dp"/>
+            <LinearLayout android:gravity="center_vertical" android:paddingTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/smaller" android:src="@drawable/ic_font_size_16dp" android:contentDescription="@string/font_size_make_smaller_desc" style="@style/screen_size_imageview_style"/>
+                <com.android.settings.widget.LabeledSeekBar android:id="@+id/seek_bar" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" style="@android:style/Widget.Material.SeekBar.Discrete"/>
+                <ImageView android:id="@+id/larger" android:src="@drawable/ic_font_size_24dp" android:contentDescription="@string/font_size_make_larger_desc" style="@style/screen_size_imageview_style"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

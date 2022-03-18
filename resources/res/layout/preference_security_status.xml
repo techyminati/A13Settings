@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:paddingTop="5dp" android:paddingBottom="12dp" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:gravity="center" android:id="@+id/status_image" android:paddingBottom="22dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/security_status_info"/>
+    <TextView android:textAppearance="@style/TextAppearance_SecurityStatusTitle" android:id="@+id/status_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/summary_placeholder"/>
+    <TextView android:textAppearance="@style/TextAppearance_SecurityStatusSummary" android:id="@+id/status_summary" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/summary_placeholder"/>
+</LinearLayout>

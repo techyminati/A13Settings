@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/container_material" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/pinned_header" android:background="?android:attr/windowBackground" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="1dp"/>
+    <FrameLayout android:id="@android:id/list_container" android:layout_width="match_parent" android:layout_height="0px" android:layout_weight="1">
+        <include layout="@layout/loading_container"/>
+    </FrameLayout>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:gravity="center_vertical" android:layout_gravity="center" android:id="@android:id/empty" android:padding="@android:dimen/secondary_content_alpha_device_default" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+    <LinearLayout android:theme="@style/Theme_TabTheme" android:orientation="vertical" android:id="@+id/tab_container" android:visibility="gone" android:clipChildren="true" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.tabs.TabLayout android:id="@+id/tabs" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:layoutDirection="ltr" android:layout_marginStart="24dp" android:layout_marginEnd="24dp" app:tabGravity="0" app:tabIndicator="@drawable/tabs_indicator_background" app:tabIndicatorColor="?android:^attr-private/colorPopupBackground" app:tabMaxWidth="0dp" app:tabMode="1" app:tabSelectedTextColor="@android:color/car_blue_800" app:tabTextAppearance="@style/TextAppearance_Tab" app:tabTextColor="?android:attr/textColorSecondary"/>
+        <androidx.viewpager.widget.ViewPager android:id="@+id/view_pager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>

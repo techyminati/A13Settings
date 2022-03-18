@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/container" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="8dp" android:foreground="@drawable/contextual_card_background" style="@style/ContextualCardStyle">
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="-8dp" layout="@layout/settingslib_preference"/>
+</com.google.android.material.card.MaterialCardView>

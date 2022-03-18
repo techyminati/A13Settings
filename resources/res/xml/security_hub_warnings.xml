@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto" android:title="@string/security_settings_title" android:key="security_hub_warnings">
+    <PreferenceCategory android:title="@string/summary_placeholder" android:key="security_hub_warnings_category" settings:searchable="false"/>
+</PreferenceScreen>

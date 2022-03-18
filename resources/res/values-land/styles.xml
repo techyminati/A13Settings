@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SudCardTitle" parent="@style/SudBaseCardTitle">
+        <item name="android:maxLines">6</item>
+    </style>
+    <style name="Theme_ConfirmDeviceCredentials" parent="@style/Theme_SubSettings">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+    <style name="Widget.Design.TabLayout" parent="@style/Base_Widget_Design_TabLayout">
+        <item name="tabGravity">1</item>
+        <item name="tabMode">1</item>
+    </style>
+    <style name="Widget_MaterialComponents_MaterialCalendar_HeaderSelection" parent="@style/Widget_AppCompat_TextView">
+        <item name="android:textAppearance">?attr/textAppearanceHeadline6</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">@integer/mtrl_calendar_selection_text_lines</item>
+    </style>
+</resources>
